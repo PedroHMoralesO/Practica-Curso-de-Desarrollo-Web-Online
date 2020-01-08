@@ -13,10 +13,17 @@ h1{
     letter-spacing: -.2px;
     /*text-transform: uppercase;*/
     /*text-decoration: none;*/
+    color: white;
 }
+
+h1 strong{
+    color: #026fff;
+}
+
 .hero{
     height: 300px;
     background-image: url('https://ihoqig.dm.files.1drv.com/y4mSrJu2RCDKpy5ZFr9C6MIa_4ACcTEQA8TElpHusXfcsjt1Iuvt6ThT-DJ65cRoGqIo_3lufpongOUBkqEJvdH3CDGOfgvifuUuOWAzEFkelvmiVF36AChKyhmvejeN5kn-mRXHO_TPuepQ79Y-deyBTAdd0KuXp9B8505nMicflC3AMPAJANfX7Ew75iZlkxlbPWXcTWacqR4OawjywroGA?');
+    background-color: #252424;
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
