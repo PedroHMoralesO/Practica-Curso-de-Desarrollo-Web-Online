@@ -14,3 +14,12 @@ h1{
     /*text-transform: uppercase;*/
     /*text-decoration: none;*/
 }
+.hero{
+    height: 300px;
+}
+.projectDetails{
+    width: 500px;
+}
+.proyectContainer{
+    width: 500px;
+}
