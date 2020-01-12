@@ -195,4 +195,55 @@ h2{
     height: 150px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.social{
+    
+}
+.socialLink{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+.socialLink.Twitter{
+    background-image: url('https://drive.google.com/uc?export=view&id=19UEOejeRvAWu9EWRHgNixmdDNh3IIGjG');
+}
+.socialLink.Facebook{
+    background-image: url('https://drive.google.com/uc?export=view&id=1MZHJDhAWNUw4Fey11KpxftLIJ0RufjNm');
+    
+}
+.socialLink.Github{
+    background-image: url('https://drive.google.com/uc?export=view&id=1vLdQHJRUg0939YOXntBcNODliF4pwoGi');
+    
+}
+.socialLink.Instagram{
+    background-image: url('https://drive.google.com/uc?export=view&id=1GlVY25_axk61Pbd36rMtRdVe9kBzWyqV');
+    
+}
+.formEmail input{
+    border-color: gray;
+    border: solid;
+    border-radius: 5px;
+    padding:10px 20px 10px 25px;
+    background-image: url('https://drive.google.com/uc?export=view&id=19M8M9zsHzn_aK2lCKe96Yw1JOg24ZWoj');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y:center ;
+    background-position-x: 5px;
+}
+.formEmail button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    /* margin: 10px auto 0; */
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.formEmail h3{
+    font-family: 'Source Sans Pro', sans-serif;
 }
