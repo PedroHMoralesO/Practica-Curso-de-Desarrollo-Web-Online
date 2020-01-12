@@ -169,8 +169,9 @@ h2{
 
 .event img{
     width: 480px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
+
 }
 
 .eventDetail{
