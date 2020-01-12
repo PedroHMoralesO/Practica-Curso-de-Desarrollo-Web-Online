@@ -6,6 +6,41 @@ body{
 .header{
     background-color: #252424;
     color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    height: inherit;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
 }
 
 .header nav ol{
@@ -29,11 +64,20 @@ h1{
     /*text-transform: uppercase;*/
     /*text-decoration: none;*/
     color: white;
-    margin: 0 500px 0 0;
+    margin: 0;
 }
 
 h1 strong{
-    color: #026fff;
+    color: #c70526;
+}
+
+h2{
+    color: #c70526;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
 .hero{
@@ -43,20 +87,43 @@ h1 strong{
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio{
     background-color: #fafafa;
+    padding: 20px;
 }
 
 .project{
+    display: flex;
     border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 20px;
     background: white;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.projectTitle{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.projectCourse, .projectDate, .projectUrl{
+    margin: 10px 0;
+}
+
+.projectDescription{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
 .projectDetails{
     width: 500px;
 }
@@ -64,4 +131,68 @@ h1 strong{
 .projectImageWrapper{
     width: 500px;
     /* border: 1px solid black; */
+}
+.footer{
+    color: white;
+    background-color: #252424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
+}
+
+.eventList{
+    display: flex;
+}
+
+.eventListTitle{
+    margin-left: 20px;
+}
+
+.event{
+    
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.eventDetail{
+    margin: 20px 40px;
+    background: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.eventDescription{
+    text-align: left;
+}
+
+.eventUrl{
+    color: #c70526;
+    border: 1px solid #c70526;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.contact{
+    background: #c70526;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
 }
