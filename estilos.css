@@ -7,6 +7,7 @@ body{
     background-color: #252424;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     height: 70px;
     align-items: center;
     justify-content: space-between;
@@ -85,6 +86,7 @@ h2{
     background-color: #252424;
     background-position-x: right;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -100,6 +102,7 @@ h2{
 
 .project{
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -110,13 +113,12 @@ h2{
 }
 
 .projectTitle{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: .3em;
 }
 
 .projectCourse, .projectDate, .projectUrl{
-    margin: 10px 0;
+    margin: .3em 0;
 }
 
 .projectDescription{
@@ -127,17 +129,22 @@ h2{
     font-family: 'Fjalla One', sans-serif;
 }
 .projectDetails{
-    width: 500px;
+    width: 50%;
 }
 
 .projectImageWrapper{
-    width: 500px;
+    width: 50%;
     /* border: 1px solid black; */
+}
+.projectImageWrapper img{
+    max-width: 100%;
+
 }
 .footer{
     color: white;
     background-color: #252424;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -198,6 +205,7 @@ h2{
     color: white;
     height: 150px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -251,9 +259,11 @@ h2{
 .formEmail h3{
     font-family: 'Source Sans Pro', sans-serif;
 }
-.container{
+.container{  <link rel="stylesheet" href="media.css" media="">
     /* border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+    flex:1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -261,3 +271,69 @@ h2{
     height: inherit;
     flex-wrap: inherit;
 }
+
+@media screen and (max-width: 1024px){
+    
+    
+}
+
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        display: block;
+        height: 50px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .project{
+        display: block;
+    }
+    .projectImageWrapper{
+        width: auto;
+        text-align: center;
+    }
+    .projectDetails{
+        width: auto;
+        font-size: 16px;
+    }
+    .projectTitle{
+        font-size: 1.5em;
+    }
+    .projectUrl{
+        font-size: 1em;
+    }
+    .projectCourse{
+        font-size: .7em;
+    }
+    .projectDate{
+        font-size: 1em;
+    }
+    .projectDescription{
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .projectDetails{
+        width: auto;
+        font-size: 12px;
+    }  
+}
+
+@media screen and (max-width: 320px){
+    .projectDetails{
+        width: auto;
+        font-size: 12px;
+    }  
+}
+
