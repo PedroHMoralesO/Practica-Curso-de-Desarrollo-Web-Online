@@ -166,8 +166,8 @@ h2{
 
 .event{
     
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     flex-shrink: 0;
     overflow: hidden;
@@ -259,7 +259,7 @@ h2{
 .formEmail h3{
     font-family: 'Source Sans Pro', sans-serif;
 }
-.container{  <link rel="stylesheet" href="media.css" media="">
+.container{
     /* border: 1px solid red; */
     max-width: 1000px;
     width: 100%;
@@ -270,10 +270,13 @@ h2{
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+    
 }
 
 @media screen and (max-width: 1024px){
-    
+    .container{
+        padding: 0 1em;
+    }
     
 }
 
@@ -321,6 +324,20 @@ h2{
     .projectDescription{
         font-size: .8em;
     }
+
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
+    }
+    .eventDetail{
+        margin: -2 .5em .5em;
+        padding: 1em;
+    }
+
+    
 }
 
 @media screen and (max-width: 480px){
@@ -328,6 +345,23 @@ h2{
         width: auto;
         font-size: 12px;
     }  
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .formEmail button {
+        margin: 1em auto;
+    }
+    .formEmail h3{
+        margin-top: 0;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
 }
 
 @media screen and (max-width: 320px){
