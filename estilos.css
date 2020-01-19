@@ -1,9 +1,37 @@
-body{
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.eot?v43nfi');
+    src: url('./fonts/icomoon.eot?v43nfi#iefix') format('embedded-opentype'), url('./fonts/icomoon.ttf?v43nfi') format('truetype'), url('./fonts/icomoon.woff?v43nfi') format('woff'), url('./fonts/icomoon.svg?v43nfi#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e900";
+}
+
+body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
 }
 
-.header{
+.header {
     background-color: #252424;
     color: white;
     display: flex;
@@ -13,66 +41,73 @@ body{
     justify-content: space-between;
 }
 
-.menu{
+.menu {
     height: inherit;
 }
-.header ol{
+
+.header ol {
     display: flex;
     height: inherit;
 }
 
-.header ol li{
+.header ol li {
     display: flex;
     height: inherit;
     align-items: center;
 }
 
-.header a{
+.header a {
     display: flex;
     align-items: center;
     height: inherit;
     padding: 0 10px;
 }
 
-ol, ul{
+ol,
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-figure{
+figure {
     margin: 0;
 }
 
-.header nav ol{
+.header nav ol {
     margin: 0;
 }
 
-.header a{
+.header a {
     color: white;
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: normal;
 }
 
-h1{
+h1 {
     line-height: 1.5;
     font-size: 40px;
     letter-spacing: -.2px;
     /*text-transform: uppercase;*/
     /*text-decoration: none;*/
-    color: white;
+    color: gray;
     margin: 0;
 }
 
-h1 strong{
+h1 strong {
     color: #c70526;
 }
 
-h2{
+h2 {
     color: #c70526;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
@@ -81,26 +116,28 @@ h2{
     margin-bottom: 40px;
 }
 
-.hero{
+.hero {
     height: 300px;
     background-color: #252424;
     background-position-x: right;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
 }
 
-.heroImg{
+.heroImg {
     object-fit: cover;
+    border-radius: 50%;
+    margin-left: 5px;
 }
 
-.portfolio{
+.portfolio {
     background-color: #fafafa;
     padding: 20px;
 }
 
-.project{
+.project {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid gray;
@@ -112,35 +149,39 @@ h2{
     justify-content: space-between;
 }
 
-.projectTitle{
+.projectTitle {
     font-size: 1.5em;
     margin-bottom: .3em;
 }
 
-.projectCourse, .projectDate, .projectUrl{
+.projectCourse,
+.projectDate,
+.projectUrl {
     margin: .3em 0;
 }
 
-.projectDescription{
+.projectDescription {
     font-size: 20px;
 }
 
-.project strong{
+.project strong {
     font-family: 'Fjalla One', sans-serif;
 }
-.projectDetails{
+
+.projectDetails {
     width: 50%;
 }
 
-.projectImageWrapper{
+.projectImageWrapper {
     width: 50%;
     /* border: 1px solid black; */
 }
-.projectImageWrapper img{
-    max-width: 100%;
 
+.projectImageWrapper img {
+    max-width: 100%;
 }
-.footer{
+
+.footer {
     color: white;
     background-color: #252424;
     display: flex;
@@ -148,24 +189,25 @@ h2{
     align-items: center;
     justify-content: space-between;
 }
-.footer img{
+
+.footer img {
     vertical-align: middle;
 }
-.footer a{
+
+.footer a {
     color: white;
 }
 
-.eventList{
+.eventList {
     display: flex;
     flex-wrap: wrap;
 }
 
-.eventListTitle{
+.eventListTitle {
     margin-left: 20px;
 }
 
-.event{
-    
+.event {
     margin: 1%;
     width: 48%;
     border-radius: 10px;
@@ -174,14 +216,13 @@ h2{
     background: #f4fbff;
 }
 
-.event img{
+.event img {
     width: 480px;
     height: 300px;
     object-fit: cover;
-
 }
 
-.eventDetail{
+.eventDetail {
     margin: 20px 40px;
     background: white;
     margin-top: -40px;
@@ -189,18 +230,20 @@ h2{
     padding: 20px;
     text-align: center;
 }
-.eventDescription{
+
+.eventDescription {
     text-align: left;
 }
 
-.eventUrl{
+.eventUrl {
     color: #c70526;
     border: 1px solid #c70526;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
-.contact{
+
+.contact {
     background: #c70526;
     color: white;
     height: 150px;
@@ -209,143 +252,225 @@ h2{
     align-items: center;
     justify-content: space-between;
 }
-.social{
-    
-}
-.socialLink{
+
+.socialLink {
     display: inline-block;
     width: 50px;
     height: 50px;
     margin: 0 10px;
     background-size: 50px 50px;
 }
-.socialLink.Twitter{
+
+.socialLink.Twitter {
     background-image: url('https://drive.google.com/uc?export=view&id=19UEOejeRvAWu9EWRHgNixmdDNh3IIGjG');
 }
-.socialLink.Facebook{
+
+.socialLink.Facebook {
     background-image: url('https://drive.google.com/uc?export=view&id=1MZHJDhAWNUw4Fey11KpxftLIJ0RufjNm');
-    
 }
-.socialLink.Github{
+
+.socialLink.Github {
     background-image: url('https://drive.google.com/uc?export=view&id=1vLdQHJRUg0939YOXntBcNODliF4pwoGi');
-    
 }
-.socialLink.Instagram{
+
+.socialLink.Instagram {
     background-image: url('https://drive.google.com/uc?export=view&id=1GlVY25_axk61Pbd36rMtRdVe9kBzWyqV');
-    
 }
-.formEmail input{
+
+.formEmail input {
     border-color: gray;
     border: solid;
     border-radius: 5px;
-    padding:10px 20px 10px 25px;
+    padding: 10px 20px 10px 25px;
     background-image: url('https://drive.google.com/uc?export=view&id=19M8M9zsHzn_aK2lCKe96Yw1JOg24ZWoj');
     background-size: 15px 15px;
     background-repeat: no-repeat;
-    background-position-y:center ;
+    background-position-y: center;
     background-position-x: 5px;
 }
-.formEmail button{
+
+.formEmail button {
     display: block;
-    margin-top: 10px;
+    margin: 10px 0;
     background: transparent;
     color: white;
     width: 100px;
     border-radius: 5px;
     /* margin: 10px auto 0; */
     padding: 10px 0;
-    margin-top: 10px;
 }
-.formEmail h3{
+
+.formEmail h3 {
     font-family: 'Source Sans Pro', sans-serif;
 }
-.container{
+
+.container {
     /* border: 1px solid red; */
     max-width: 1000px;
     width: 100%;
-    flex:1;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
-    
 }
 
-@media screen and (max-width: 1024px){
-    .container{
+.htmiVideo {
+    width: 100%;
+    height: auto;
+}
+
+.youtubeVideo {
+    /* (proporcion = heigth * 100 / width) en pading top, para que se estire el video se usa position absolute*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flexibleVideo {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background: blue;
+}
+
+.burgerButton {
+    /* align-items: center;
+    justify-content: center; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+    /* font-size: 50px; */
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
         padding: 0 1em;
     }
-    
+    h1 {
+        font-size: 1.5em;
+        z-index: 2;
+    }
 }
 
-@media screen and (max-width: 767px){
-    .header{
+@media screen and (max-width: 767px) {
+    .menu {
+        position: fixed;
+        background: rgba(0, 0, 0, .5);
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        z-index: 3;
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.isActive {
+        left: 0;
+    }
+    .burgerButton {
+        display: block;
+    }
+    .header {
         display: block;
         height: auto;
     }
-    .header ol{
+    .header ol {
         display: block;
     }
-    .header ol li{
+    .header ol li {
         display: block;
         height: 50px;
     }
-    .header a{
+    .header a {
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
-    .header .logo{
+    .header .logo {
         text-align: center;
     }
-    .project{
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .heroImg {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .project {
         display: block;
     }
-    .projectImageWrapper{
+    .projectImageWrapper {
         width: auto;
         text-align: center;
     }
-    .projectDetails{
+    .projectDetails {
         width: auto;
         font-size: 16px;
     }
-    .projectTitle{
+    .projectTitle {
         font-size: 1.5em;
     }
-    .projectUrl{
+    .projectUrl {
         font-size: 1em;
     }
-    .projectCourse{
+    .projectCourse {
         font-size: .7em;
     }
-    .projectDate{
+    .projectDate {
         font-size: 1em;
     }
-    .projectDescription{
+    .projectDescription {
         font-size: .8em;
     }
-
-    .event{
+    .event {
         width: auto;
         flex-shrink: initial;
     }
-    .event img{
+    .event img {
         width: 100%;
     }
-    .eventDetail{
+    .eventDetail {
         margin: -2 .5em .5em;
         padding: 1em;
     }
-
-    
 }
 
-@media screen and (max-width: 480px){
-    .projectDetails{
+@media screen and (max-width: 480px) {
+    .projectDetails {
         width: auto;
         font-size: 12px;
-    }  
-    .contact{
+    }
+    .contact {
         height: auto;
         padding: 1.5em 0;
         text-align: center;
@@ -354,20 +479,26 @@ h2{
     .formEmail button {
         margin: 1em auto;
     }
-    .formEmail h3{
+    .formEmail h3 {
         margin-top: 0;
     }
-    .footer{
+    .footer {
         display: block;
         text-align: center;
         border: 1px solid transparent;
     }
 }
 
-@media screen and (max-width: 320px){
-    .projectDetails{
+@media screen and (max-width: 320px) {
+    .projectDetails {
         width: auto;
         font-size: 12px;
-    }  
+    }
+    h1 {
+        font-size: 1.2em;
+        background: rgba(0, 0, 0, .5);
+    }
+    .hero {
+        padding: 2em 1em;
+    }
 }
-
