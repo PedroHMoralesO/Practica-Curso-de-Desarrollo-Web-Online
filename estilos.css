@@ -359,7 +359,10 @@ h2 {
     /* font-size: 50px; */
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+    .portfolio {
+        padding: 0;
+    }
     .container {
         padding: 0 1em;
     }
@@ -463,6 +466,10 @@ h2 {
         margin: -2 .5em .5em;
         padding: 1em;
     }
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -496,9 +503,15 @@ h2 {
     }
     h1 {
         font-size: 1.2em;
+        color: white;
         background: rgba(0, 0, 0, .5);
     }
     .hero {
         padding: 2em 1em;
+    }
+    .socialLink {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
     }
 }
